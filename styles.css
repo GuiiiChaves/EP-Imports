@@ -1,0 +1,155 @@
+/* Reset de Estilos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+/* ... Seu código existente ... */
+
+/* Estilos da Navbar para Dispositivos Móveis */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        margin-left: 0;
+        margin-top: 10px; /* Adiciona um espaçamento entre o logo e os itens do menu */
+    }
+    
+    nav a {
+        margin: 0 0 5px 0; /* Adiciona espaçamento entre os itens do menu */
+    }
+}
+
+/* ... Seu código existente ... */
+
+.navbar {
+    background-color: black;
+    color: #fff;
+    padding: 2px 15px;
+    width: 100%;
+    max-width: 1200px; /* Defina a largura máxima da navbar conforme necessário */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 190px;
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Muda os itens para a direita */
+}
+
+li:hover{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+/* ... Seu código existente ... */
+
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+/* ... Seu código existente ... */
+
+.product-section {
+    max-width: 100%;
+    margin: 50px auto; /* Centraliza a seção */
+    text-align: center;
+}
+
+.product-cards-container {
+    display: flex;
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    flex-wrap: wrap; /* Permitir que os cards quebrem para a próxima linha */
+    gap: 20px; /* Adiciona espaçamento entre os cards */
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
+    flex: 0 0 calc(20% - 20px); /* Ajuste a largura dos cards e adicione a margem entre eles */
+    box-sizing: border-box; /* Adiciona o box-sizing para evitar problemas de layout */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+.product-button:hover {
+    background-color: #555;
+}
+
+/* ... Seu código existente ... */
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
