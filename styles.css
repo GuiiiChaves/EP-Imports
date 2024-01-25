@@ -1,0 +1,156 @@
+/* Reset de Estilos */
+body, h1, h2, h3, ul, li {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    color: white;
+    cursor: pointer;
+    font-size: 35px;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3, a{
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Estilos da Navbar para Dispositivos Móveis */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items:first baseline ;
+    }
+
+    .nav-menu {
+        margin-left: 0;
+        margin-top: 10px; /* Adiciona um espaçamento entre o logo e os itens do menu */
+    }
+
+    nav a {
+        margin: 0 0 5px 0; /* Adiciona espaçamento entre os itens do menu */
+    }
+}
+
+.navbar {
+    background-color: black;
+    color: #fff;
+    padding: 2px 5px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    height: 50px;
+}
+
+.logoapple img {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px; /* Adiciona um espaço entre as logos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+}
+
+.product-section {
+    max-width: 100%;
+    margin: 20px auto; /* Centraliza a seção */
+    text-align: center;
+}
+
+/* ... Seu código CSS existente ... */
+
+.product-cards-container {
+    display: flex;
+    flex-direction: column; /* Alterado para uma coluna para cards ficarem um abaixo do outro */
+    gap: 5px; /* Adiciona espaçamento entre os cards */
+    overflow: hidden; /* Para ocultar qualquer parte extra dos cards além da largura da tela */
+}
+
+.product-card {
+    background-color: #f8f8f8;
+    padding: 80px;
+    margin-bottom: 1px;
+    position: relative;
+    transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: auto; /* Alterado para ajustar automaticamente a altura com base no conteúdo */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; /* Ajustado para manter a proporção original da imagem */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-out;
+}
+
+.product-button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    text-align: left;
+    padding: 6px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Adiciona um sombreado ao fundo preto */
+}
+
+
