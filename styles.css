@@ -58,14 +58,96 @@ header {
     align-items: center;
 }
 
+/* ... Seu código CSS existente ... */
+
+/* Adição do ícone de menu à direita da página */
+/* ... Seu código CSS existente ... */
+
+/* Adição do ícone de menu à direita da página */
+.menu-icon {
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    margin-left: 50%; /* Move para a direita da página */
+    cursor: pointer;
+    top: 4%;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 96%; /* Centraliza o menu no centro da tela */
+    transform: translateX(-50%); /* Ajusta a posição no centro */
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out; /* Adiciona uma transição suave de opacidade e altura */
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    z-index: 1000; /* Adiciona uma propriedade z-index suficientemente alta */
+}
+
+.menu-content.open {
+    position: absolute;
+    max-height: 200px; /* Ajuste conforme necessário para mostrar o conteúdo desejado */
+    opacity: 1;
+    border-radius: 20%;
+    transition: 1s;
+    display: block; /* Adiciona esta linha para garantir que o conteúdo seja exibido */
+    z-index: 1000; /* Adiciona uma propriedade z-index suficientemente alta */
+}
+
+.menu-content img {
+    width: 90px; /* Ajuste o tamanho conforme necessário */
+    height: 80px;
+    margin-right: 50px;
+}
+
+/* ... Seu código CSS existente ... */
+
+
+/* ... Seu código CSS existente ... */
+
+/* Centraliza a logo e a logoapple na navbar */
 .logos {
     display: flex;
     align-items: center;
+    margin-left: auto; /* Move para a direita da navbar */
 }
+
+.instalogo img{
+    width: 180px;
+    height: 100px;
+    margin-left: -15%; /* Adiciona um espaço entre as logos */
+}
+
+.suplogo{
+    width: 180px;
+    height: 100px;
+    margin-left: 2%;
+}
+
+
+.logo img, .logoapple img {
+    width: 120px;
+    height: 50px;
+    margin: 0 auto; /* Centraliza a logo e a logoapple */
+}
+
+/* ... Seu código CSS existente ... */
+
 
 .logo img {
     width: 120px;
     height: 50px;
+}
+
+.logo img:hover {
+    transform: scale(1.2);
+    transition: 1s;
 }
 
 .logoapple img {
@@ -73,6 +155,12 @@ header {
     height: 50px;
     margin-left: 10px; /* Adiciona um espaço entre as logos */
 }
+
+.logoapple img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
 
 nav a {
     text-decoration: none;
@@ -104,7 +192,7 @@ nav a:hover {
 .product-card {
     background-color: #f8f8f8;
     padding: 80px;
-    margin-bottom: 0px;
+    margin-bottom: 1px;
     position: relative;
     transition: transform 0.5s ease-out, box-shadow 0.3s ease-out;
     box-sizing: border-box;
@@ -144,13 +232,13 @@ nav a:hover {
 footer {
     background-color: white;
     color: black;
-    text-align: center;
+    text-align: left;
     padding: 6px 0;
     bottom: 0;
     width: 100%;
     font-size: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Adiciona um sombreado ao fundo preto */
 }
-}
+
 
 
