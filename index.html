@@ -10,9 +10,16 @@
 
     <header>
         <nav class="navbar">
-            <div class="logos">
-                <div class="logo"><img src="logo.png" alt=""></div>
-                <div class="logoapple"><img src="applelogo.jpg" alt=""></div>
+            <div class="nav-menu">
+                <div class="logos">
+                    <div class="logo"><img src="logo.png" alt=""></div>
+                    <div class="logoapple"><img src="applelogo.jpg" alt=""></div>
+                </div>
+                <div class="menu-icon">&#9776;</div>
+                <div class="menu-content">
+                    <div class="instalogo"><a href="https://www.instagram.com/ep_phones/"><img src="instalogo2.png" alt="Instagram"></a></div>
+                    <div class="suplogo"> <a href="https://api.whatsapp.com/send/?phone=5581985454813&text=Ol%C3%A1%2C+Gostaria+de+saber+os+pre%C3%A7os+dos+iPhones%21&type=phone_number&app_absent=0"><img src="suplogo.png" alt="Suporte ao Cliente"></div></a>
+                </div>
             </div>
         </nav>
     </header>
@@ -21,11 +28,11 @@
     <section class="product-section">
         <div class="product-cards-container">
             <div class="product-card" style="background-image: url('banner1.jpg');">
-                <a href="ofertas.html"><h3> Ofertas Especiais! </h3></a>
+                <a href="ofertas.html"><h3>Ofertas Especiais! </h3></a>
             </div>
 
             <div class="product-card" style="background-image: url('banner2.jpg');">
-                <a href="lacrados.html"><h3> iPhones Lacrados </h3></a>
+                <a href="lacrados.html"><h3>iPhones Lacrados </h3></a>
             </div>
 
             <div class="product-card" style="background-image: url('banner4.png');">
@@ -33,7 +40,7 @@
             </div>
 
             <div class="product-card" style="background-image: url('iphonebanner6.jpg');">
-                <a href="recondicionado.html"><h3> iPhones Recondicionados </h3></a>
+                <a href="recondiconado.html"><h3> iPhones Recondicionados </h3></a>
             </div>
         </div>
     </section>
@@ -46,7 +53,17 @@
     </footer>
 
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.querySelector('.menu-icon');
+    var menuContent = document.querySelector('.menu-content');
+
+    menuIcon.addEventListener('click', function () {
+        menuContent.classList.toggle('open');
+    });
+});
+
+</script>
 </html>
 
-</body>
-</html>
