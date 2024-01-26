@@ -9,13 +9,19 @@
 <body>
 
     <header>
-            <nav class="navbar">
+        <nav class="navbar">
+            <div class="nav-menu">
                 <div class="logos">
-                <div class="logo"><a href="index.html"><img src="logo.png" alt=""></a></div>
-                <div class="logoapple"><a href="index.html"><img src="applelogo.jpg" alt=""></a></div>
-                <div class="logoinsta"><a href="https://www.instagram.com/ep_phones/"><img src="instalogo2.png" alt=""></a></div>
+                    <a href="index.html"><div class="logo"><img src="logo.png" alt=""></div></a>
+                   <a href="index.html"> <div class="logoapple"><img src="applelogo.jpg" alt=""></div></a>
+                </div>
+                <div class="menu-icon">&#9776;</div>
+                <div class="menu-content">
+                    <div class="instalogo"><a href="https://www.instagram.com/ep_phones/"><img src="instalogo2.png" alt="Instagram"></a></div>
+                    <div class="suplogo"> <a href="https://api.whatsapp.com/send/?phone=5581985454813&text=Ol%C3%A1%2C+Gostaria+de+saber+os+pre%C3%A7os+dos+iPhones%21&type=phone_number&app_absent=0"><img src="suplogo.png" alt="Suporte ao Cliente"></div></a>
+                </div>
             </div>
-        </nav></a>
+        </nav>
     </header>
 
     <section class="product-section">
@@ -228,6 +234,18 @@
     </footer>
 
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var menuIcon = document.querySelector('.menu-icon');
+    var menuContent = document.querySelector('.menu-content');
+
+    menuIcon.addEventListener('click', function () {
+        menuContent.classList.toggle('open');
+    });
+});
+
+</script>
 </html>
 
 
