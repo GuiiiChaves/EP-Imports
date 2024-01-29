@@ -230,3 +230,8 @@ footer {
     font-size: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75); /* Adiciona um sombreado ao fundo preto */
 }
+
+.ofertas{
+    color: gray;
+    text-decoration: line-through;
+}
